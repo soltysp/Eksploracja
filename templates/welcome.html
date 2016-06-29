@@ -1,0 +1,29 @@
+<!-- extend base layout -->
+{% extends "base.html" %}
+
+{% block content %}
+
+  <!-- Main jumbotron for a primary marketing message or call to action -->
+  <div class="jumbotron">
+    <h1>Przetwarzanie danych w PYTHON</h1>
+    <p>Projekt dotyczy przetwarzania danych w języku PYTHON oraz prezentację rezultatów w web aplikacji. Wykorzystane dane pochodzą z zasobów strony: <a href="https://www.crowdflower.com/data-for-everyone/" >https://www.crowdflower.com/data-for-everyone/</a> </p>
+  </div>
+
+  <div class="page-header">
+    <h3>Kilka słów o projekcie:</h3>
+    <p><ul>
+    <li>Dane zawierają zestaw zdań o różnym nacechowaniu emocjonalnym - od zdań przedstawiających złość, strach, smutek po zdania opisujące radość, szczęście, miłość</li>
+    <li>Dla każdego zdania przypisana została emocja oraz współczynnik pewności wg skali Plutchika
+    <li><a href="https://pl.wikipedia.org/wiki/Teoria_emocji_Plutchika">Co to jest koło emocji Plutchika?</a></li>
+    <li>"Przeglądaj dane" - tutaj można zapoznać się z przykładami zdań reprezentujących poszczególne emocje</li>
+    <li>"Analizuj dane" - wyniki analizy statystycznej</li>
+  </ul></p>
+  </div>
+  <p>
+    <a href="/raw" class="btn btn-success" role="button">Przeglądaj Dane</a>
+    <a href="/result" class="btn btn-primary" role="button">Analizuj Dane</a>
+  </p>
+
+
+{% endblock %}
+
